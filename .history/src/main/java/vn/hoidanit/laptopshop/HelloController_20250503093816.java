@@ -10,14 +10,14 @@ public class HelloController {
         return "Hello World 123!";
     }
 
-    @GetMapping("/user")
-    public String userPage() {
-        return "Only user can access this page";
+    @GetMapping("/")
+    public String index() {
+        return "Hello World 123!";
     }
 
-    @GetMapping("/admin")
-    public String adminPage() {
-        return "Only admin can access this page";
+    @GetMapping("/")
+    public String index() {
+        return "Hello World 123!";
     }
 
 }
