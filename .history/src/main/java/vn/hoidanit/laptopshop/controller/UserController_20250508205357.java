@@ -10,17 +10,10 @@ import vn.hoidanit.laptopshop.service.UserService;
 @Controller
 public class UserController {
 
-    private UserService userService;
-
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
-
     @RequestMapping("/")
 
     public String getHomePage() {
-        String test = this.userService.handleHello();
-        return "hello";
+        return "eric";
     }
 
 }
@@ -28,15 +21,15 @@ public class UserController {
 // @RestController
 // public class UserController {
 
-// private UserService userService;
+//     private UserService userService;
 
-// public UserController(UserService userService) {
-// this.userService = userService;
-// }
+//     public UserController(UserService userService) {
+//         this.userService = userService;
+//     }
 
-// @GetMapping("")
-// public String getHomePage() {
-// return this.userService.handleHello();
-// }
+//     @GetMapping("")
+//     public String getHomePage() {
+//         return this.userService.handleHello();
+//     }
 
 // }

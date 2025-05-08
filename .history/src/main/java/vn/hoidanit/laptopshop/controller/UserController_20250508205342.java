@@ -16,11 +16,8 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping("/")
-
     public String getHomePage() {
-        String test = this.userService.handleHello();
-        return "hello";
+        return "eric.html";
     }
 
 }
