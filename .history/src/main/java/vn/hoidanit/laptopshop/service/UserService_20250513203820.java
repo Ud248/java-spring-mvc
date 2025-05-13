@@ -23,8 +23,8 @@ public class UserService {
         return this.userRepository.findAll();
     }
 
-    public List<User> getAllUsersByEmail(String email) {
-        return this.userRepository.findByEmail(email);
+    public List<User> getAllUsersBy() {
+        return this.userRepository.findAll();
     }
 
     public User handleSaveUser(User user) {
