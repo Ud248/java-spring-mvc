@@ -40,12 +40,6 @@ public class UserController {
         return "admin/user/create";
     }
 
-    @RequestMapping("/admin/user")
-    public String getTableUserPage(Model model) {
-        model.addAttribute("newUser", new User());
-        return "admin/user/tableUser";
-    }
-
     @RequestMapping(value = "/admin/user/create", method = RequestMethod.POST)
     public String createUserPage(Model model, @ModelAttribute("newUser") User hoidanit) {
         System.out.println("run here" + hoidanit);

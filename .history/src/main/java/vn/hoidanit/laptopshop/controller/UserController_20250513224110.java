@@ -40,10 +40,10 @@ public class UserController {
         return "admin/user/create";
     }
 
-    @RequestMapping("/admin/user")
-    public String getTableUserPage(Model model) {
+    @RequestMapping("/admin/user/create")
+    public String getCreateUserPage(Model model) {
         model.addAttribute("newUser", new User());
-        return "admin/user/tableUser";
+        return "admin/user/create";
     }
 
     @RequestMapping(value = "/admin/user/create", method = RequestMethod.POST)
