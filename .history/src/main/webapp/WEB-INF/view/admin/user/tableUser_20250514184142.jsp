@@ -35,18 +35,15 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <c:forEach var="user" items="${users1}">
-                                        <tr>
-                                            <td>${user.id}</td>
-                                            <td>${user.email}</td>
-                                            <td>${user.fullName}</td>
-                                            <td>
-                                                <button type="button" class="btn btn-success">View</button>
-                                                <button type="button" class="btn btn-warning">Update</button>
-                                                <button type="button" class="btn btn-danger">Delete</button>
-                                            </td>
-                                        </tr>
-                                    </c:forEach>
+                                     <c:forEach var="weather" items="${weathers}">
+        <tr>
+            <td>${weather[0]}</td>
+            <td>${weather[1]}</td>
+            <td style="text-align: center">${weather[2]}℃</td>
+            <td style="text-align: center">${weather[3]}℃</td>
+        </tr>
+    </c:forEach>
+
                                 </tbody>
                             </table>
                         </div>

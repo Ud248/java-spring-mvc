@@ -50,7 +50,7 @@ public class UserController {
     @RequestMapping(value = "/admin/user/create", method = RequestMethod.POST)
     public String createUserPage(Model model, @ModelAttribute("newUser") User hoidanit) {
         this.userService.handleSaveUser(hoidanit);
-        return "redirect:/admin/user";
+        return "redirect:tableUser";
     }
 
 }
